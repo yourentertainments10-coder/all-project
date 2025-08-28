@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignments</title>
+</head>
+<body>
+    <h2>Your Assignments</h2>
+    <table border="1">
+        <tr>
+            <th>Title</th>
+            <th>Grade</th>
+        </tr>
+        {% for a in assignments %}
+        <tr>
+            <td>{{ a.title }}</td>
+            <td>{{ a.grade }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="{{ url_for('student_dashboard') }}">Back</a>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>All Assignments</h2>
+<table border="1">
+    <tr><th>ID</th><th>Title</th><th>Description</th><th>Faculty ID</th></tr>
+    {% for a in assignments %}
+    <tr><td>{{ a.id }}</td><td>{{ a.title }}</td><td>{{ a.description }}</td><td>{{ a.faculty_id }}</td></tr>
+    {% endfor %}
+</table>
+{% endblock %}

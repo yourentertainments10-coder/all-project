@@ -1,0 +1,6 @@
+Flask
+scikit-learn
+pandas
+numpy
+why u made train_model.py?when there is app.py...prob was that it is not predicting correctly
+can i delete .venv and train_model.py??will it affect my project??

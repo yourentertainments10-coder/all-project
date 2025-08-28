@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Your Assignments</h2>
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Grade</th>
+    </tr>
+    {% for assignment in assignments %}
+    <tr>
+        <td>{{ assignment.title }}</td>
+        <td>{% if assignment.grade %}{{ assignment.grade }}{% else %}N/A{% endif %}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

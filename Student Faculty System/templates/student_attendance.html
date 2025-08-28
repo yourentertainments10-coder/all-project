@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Your Attendance</h2>
+<table>
+    <tr>
+        <th>Date</th>
+        <th>Status</th>
+    </tr>
+    {% for att in attendance %}
+    <tr>
+        <td>{{ att.date }}</td>
+        <td>{{ att.status }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

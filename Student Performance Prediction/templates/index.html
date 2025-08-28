@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Student Performance Prediction</h2>
+    <form action="/predict" method="post">
+    <label for="age">Age</label><br>
+    <input type="number" name="age" id="age" min="15" max="22" placeholder="Enter age (15-22)" required style="width:100%;">
+    <div style="font-size:12px;color:#555;">Enter your age (15-22).</div><br>
+    <label for="study_time">Study Time</label><br>
+    <input type="number" name="study_time" id="study_time" min="1" max="4" placeholder="Study time (1-4 hours/week)" required style="width:100%;">
+    <div style="font-size:12px;color:#555;">Enter study time in hours per week (1-4).</div><br>
+    <label for="failures">Number of Past Class Failures</label><br>
+    <input type="number" name="failures" id="failures" min="0" max="3" placeholder="Failures (0-3)" required style="width:100%;">
+    <div style="font-size:12px;color:#555;">Enter number of past class failures (0-3).</div><br>
+    <label for="absences">Absences</label><br>
+    <input type="number" name="absences" id="absences" min="0" max="20" placeholder="Absences (0-20)" required style="width:100%;">
+    <div style="font-size:12px;color:#555;">Enter number of absences (0-20).</div><br>
+    <label for="G1">First Period Grade</label><br>
+    <input type="number" name="G1" id="G1" min="0" max="20" placeholder="G1 (0-20)" required style="width:100%;">
+    <div style="font-size:12px;color:#555;">Enter first period grade (0-20).</div><br>
+    <label for="G2">Second Period Grade</label><br>
+    <input type="number" name="G2" id="G2" min="0" max="20" placeholder="G2 (0-20)" required style="width:100%;">
+    <div style="font-size:12px;color:#555;">Enter second period grade (0-20).</div><br>
+    <label for="G3">Final Grade</label><br>
+    <input type="number" name="G3" id="G3" min="0" max="20" placeholder="G3 (0-20)" required style="width:100%;">
+    <div style="font-size:12px;color:#555;">Enter final grade (0-20).</div><br>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>

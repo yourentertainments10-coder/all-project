@@ -1,0 +1,9 @@
+<h2>Welcome, {{ user['username'] }} (Faculty)</h2>
+<p>Here you can manage assignments and attendance.</p>
+<ul>
+	<li><a href="{{ url_for('add_assignment') }}">Add Assignment</a></li>
+	<li><a href="{{ url_for('mark_attendance') }}">Mark Attendance</a></li>
+	<li><a href="{{ url_for('student_assignments') }}">View Assignments</a></li>
+	<li><a href="{{ url_for('mark_attendance') }}">View Attendance</a></li>
+	<li><a href="{{ url_for('logout') }}">Logout</a></li>
+</ul>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+</head>
+<body>
+    <h2>Welcome Student</h2>
+    <ul>
+        <li><a href="{{ url_for('student_assignments') }}">View Assignments</a></li>
+        <li><a href="{{ url_for('student_attendance') }}">View Attendance</a></li>
+        <li><a href="{{ url_for('logout') }}">Logout</a></li>
+    </ul>
+</body>
+</html>

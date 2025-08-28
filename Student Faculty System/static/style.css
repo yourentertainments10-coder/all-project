@@ -1,0 +1,140 @@
+
+/* Admin Dashboard Custom Styles */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 28px;
+    margin-top: 24px;
+}
+.dashboard-card {
+    background: #f2e9e4;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(34,34,59,0.07);
+    padding: 28px 18px 22px 18px;
+    text-align: center;
+    transition: transform 0.15s;
+}
+.dashboard-card:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(34,34,59,0.13);
+}
+.dashboard-card h3 {
+    margin: 0 0 10px 0;
+    color: #22223b;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.dashboard-count {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4a4e69;
+    margin-bottom: 10px;
+}
+.dashboard-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: #22223b;
+    background: #c9ada7;
+    padding: 7px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+}
+.dashboard-link:hover {
+    background: #4a4e69;
+    color: #fff;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #e0eafc, #cfdef3);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: #22223b;
+    color: #fff;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.navbar h2 {
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.navbar a {
+    color: #f2e9e4;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.navbar a:hover {
+    color: #9a8c98;
+}
+
+.container {
+    margin: 32px auto;
+    background: #fff;
+    padding: 32px 28px;
+    border-radius: 12px;
+    max-width: 700px;
+    box-shadow: 0 4px 24px rgba(34,34,59,0.08);
+}
+
+form input, form select, form textarea, form button {
+    margin: 10px 0 18px 0;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #bcbcbc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+form textarea {
+    min-height: 60px;
+    resize: vertical;
+}
+button, form button {
+    background: #22223b;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+button:hover, form button:hover {
+    background: #4a4e69;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #f8f8fa;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(34,34,59,0.04);
+}
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 12px 8px;
+    text-align: center;
+    font-size: 1rem;
+}
+table th {
+    background: #9a8c98;
+    color: #fff;
+    font-weight: 600;
+}
+table tr:nth-child(even) {
+    background: #f2e9e4;
+}
+
+
